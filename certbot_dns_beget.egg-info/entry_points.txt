@@ -1,0 +1,3 @@
+[certbot.plugins]
+dns-beget = certbot_dns_beget._internal.dns_beget:Authenticator
+

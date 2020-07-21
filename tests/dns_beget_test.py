@@ -19,7 +19,6 @@ LOGIN = 'demo'
 PASSWORD = 'demo'
 VALID_CONFIG = {"login": LOGIN, "password": PASSWORD}
 
-
 class AuthenticatorTest(test_util.TempDirTestCase, dns_test_common.BaseAuthenticatorTest):
 
     def setUp(self):
@@ -48,10 +47,15 @@ class BegetClientTest(unittest.TestCase):
         from certbot_dns_beget._internal.dns_beget import _BegetClient
         self.beget_client = _BegetClient(LOGIN, PASSWORD)
        
-    def test_find_records(self):
+    def test_add_txt_record(self):
 
         # _find_domain | pylint: disable=protected-access
-        r = ''
+        #self.beget_client.add_txt_record(DOMAIN, DOMAIN_CHALLENGE, TXT_RECORD_VALUE)
+
+    def test_del_txt_record(self):
+
+        # _find_domain | pylint: disable=protected-access
+        #self.beget_client.del_txt_record(DOMAIN, DOMAIN_CHALLENGE, TXT_RECORD_VALUE)
 
 if __name__ == "__main__":
     unittest.main()  # pragma: no cover
