@@ -118,8 +118,6 @@ class _BegetClient(object):
                 "records": records
             }
 
-            print(input_data)
-
             self._beget_api('/dns/changeRecords', input_data)
 
     def del_txt_record(self, domain_name, record_name, record_content):
