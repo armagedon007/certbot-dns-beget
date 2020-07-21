@@ -51,11 +51,12 @@ class BegetClientTest(unittest.TestCase):
 
         # _find_domain | pylint: disable=protected-access
         #self.beget_client.add_txt_record(DOMAIN, DOMAIN_CHALLENGE, TXT_RECORD_VALUE)
+        t = ''
 
     def test_del_txt_record(self):
-
         # _find_domain | pylint: disable=protected-access
         #self.beget_client.del_txt_record(DOMAIN, DOMAIN_CHALLENGE, TXT_RECORD_VALUE)
+        t = ''
 
 if __name__ == "__main__":
     unittest.main()  # pragma: no cover
